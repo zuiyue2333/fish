@@ -255,6 +255,7 @@ public class GameWin extends JFrame {
                 if (myFish.getRec().intersects(enamy.getRec())) {
                     if (myFish.level >= enamy.type) {
                         System.out.println("碰撞了");
+                        music.eat_play();
                         enamy.x = -200;
                         enamy.y = -200;
                         GameUtils.count = GameUtils.count + enamy.count;
