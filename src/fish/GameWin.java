@@ -137,7 +137,6 @@ public class GameWin extends JFrame {
 
         switch (state){
             case 0:
-
                 break;
             case 1:
 
