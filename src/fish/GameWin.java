@@ -281,6 +281,7 @@ public class GameWin extends JFrame {
     }
 
     public static void main(String[] args) {
+        music.sea_play();
         GameWin gameWin = new GameWin();
         gameWin.launch();
     }

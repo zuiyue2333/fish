@@ -2,29 +2,32 @@ package fish;
 
 import javax.sound.sampled.*;
 import java.awt.datatransfer.UnsupportedFlavorException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 public class music {
     private static Clip bgm;
     private static Clip eat;
     private static AudioInputStream ais;
-    music(){}
-    public static void eat_play(){
+
+    music() {
+    }
+
+    public static void eat_play() {
         try {
-            eat= AudioSystem.getClip();
-            InputStream is=music.class.getClassLoader().getResourceAsStream("eat.wav");
-            if(is !=null){
-                ais=AudioSystem.getAudioInputStream(is);
+            eat = AudioSystem.getClip();
+            InputStream is = music.class.getClassLoader().getResourceAsStream("eat.wav");
+            if (is != null) {
+                ais = AudioSystem.getAudioInputStream(is);
             }
             eat.open(ais);
-        }catch (LineUnavailableException | IOException | UnsupportedAudioFileException e){
+        } catch (LineUnavailableException | IOException | UnsupportedAudioFileException e) {
             e.printStackTrace();
         }
         eat.start();
     }
-    public static void eat_stop(){
-        if(ais!=null){
+
+    public static void eat_stop() {
+        if (ais != null) {
             eat.close();
         }
     }
@@ -46,5 +49,6 @@ public class music {
         if(ais!=null){
             bgm.close();
         }
-    };
+
+    }
 }
