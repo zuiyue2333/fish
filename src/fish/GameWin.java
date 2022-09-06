@@ -89,9 +89,11 @@ public class GameWin extends JFrame {
                         case 1:
                             state = 4;
                             GameUtils.drawWord(getGraphics(),"游戏暂停!!!",Color.red,50,600,400);
+                            music.sea_stop();
                             break;
                         case 4:
                             state =1;
+                            music.sea_play();
                             break;
                     }
                 }
