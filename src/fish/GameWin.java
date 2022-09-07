@@ -85,8 +85,10 @@ public class GameWin extends JFrame {
                     switch (state){
                         case 1:
                             state = 4;
-                            GameUtils.drawWord(getGraphics(),"游戏暂停!!!",Color.red,50,600,400);
-                            GameUtils.drawWord(getGraphics(),"使用esc退出游戏",Color.red,50,550,500);
+                            GameUtils.drawWord(getGraphics(),"游戏暂停!!!",
+                                    Color.red,50,600,400);
+                            GameUtils.drawWord(getGraphics(),"使用esc退出游戏",
+                                    Color.red,50,550,500);
                             music.sea_stop();
                             break;
                         case 4:

@@ -74,6 +74,7 @@ class Enamy_3_L extends Enamy{
         this.width = 300;
         this.height = 150;
         this.speed = 15;
+        this.count=3;
         this.type = 3;
         this.img =GameUtils.enamyl_3img;
     }

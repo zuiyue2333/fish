@@ -38,10 +38,13 @@ public class MyFish {
     //绘制自身的方法
     public void paintSelf(Graphics g){
         logic();
-        g.drawImage(img,x,y,width+GameUtils.count,height+GameUtils.count,null);
+        g.drawImage(img,x,y,width+GameUtils.count,
+                height+GameUtils.count,null);
     }
     //获取自身矩形的方法,用于碰撞检测'
     public Rectangle getRec(){
-        return new Rectangle(x,y,width+GameUtils.count,height+GameUtils.count);
+        return new Rectangle(x,y,
+                width+GameUtils.count,
+                height+GameUtils.count);
     }
 }
