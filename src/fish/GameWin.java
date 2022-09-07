@@ -4,10 +4,7 @@ package fish;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 
 public class GameWin extends JFrame {
 
@@ -41,6 +38,7 @@ public class GameWin extends JFrame {
 
     //我方鱼类
     MyFish myFish = new MyFish();
+
 
 
     public void launch(){
@@ -127,7 +125,6 @@ public class GameWin extends JFrame {
                 e.printStackTrace();
             }
         }
-
     }
 
     @Override

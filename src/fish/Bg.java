@@ -7,7 +7,8 @@ public class Bg {
         g.drawImage(GameUtils.bg,0,0,null);
         switch (GameWin.state){
             case 0:
-                GameUtils.drawWord(g,"开始",Color.red,80,700,500);
+                GameUtils.drawWord(g,"鼠标点击开始游戏",Color.red,80,400,500);
+                GameUtils.drawWord(g,"使用wasd进行移动",Color.red,60,500,600);
                 break;
             case 1:
                 GameUtils.drawWord(g,"积分"+GameUtils.count,Color.ORANGE,50,200,120);
