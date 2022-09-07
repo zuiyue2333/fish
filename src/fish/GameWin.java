@@ -40,7 +40,6 @@ public class GameWin extends JFrame {
     MyFish myFish = new MyFish();
 
 
-
     public void launch(){
         this.setVisible(true);
         this.setSize(width,height);
@@ -87,6 +86,7 @@ public class GameWin extends JFrame {
                         case 1:
                             state = 4;
                             GameUtils.drawWord(getGraphics(),"游戏暂停!!!",Color.red,50,600,400);
+                            GameUtils.drawWord(getGraphics(),"使用esc退出游戏",Color.red,50,550,500);
                             music.sea_stop();
                             break;
                         case 4:
@@ -94,6 +94,9 @@ public class GameWin extends JFrame {
                             music.sea_play();
                             break;
                     }
+                }
+                if (e.getKeyCode()==27){
+                    System.exit(0);
                 }
             }
 
